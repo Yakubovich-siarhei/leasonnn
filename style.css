@@ -133,7 +133,8 @@ table {
 	margin-top: 12%;
 }
 
-.container1 .center .center_text h2, .container1 .center .center_text h1 {
+.container1 .center .center_text h2, 
+.container1 .center .center_text h1 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 36px;
 	color: #e7e6e6;
@@ -274,14 +275,16 @@ table {
 	display: grid;
   	grid-template-areas:
 		'n1 n1 n3'
-		'n1 n1 n3'
-		'n2 n2 n3'
 		'n2 n2 n3';	
 }
 
 .container4 .center .navbar1 {
 	margin-top: 50px;	
 	margin-left: 22px;
+}
+
+.container4 .center .navbar1 ul {
+	display: flex;
 }
 
 .container4 .center .navbar1 ul li {
@@ -301,10 +304,6 @@ table {
 	color:#c7b299;
 }
 
-.container4 .center .navbar1 ul {
-	display: flex;
-}
-
 .container4 .center .navbar2 {
 	margin-left: 22px;
 }
@@ -321,7 +320,7 @@ table {
 	margin-right: 22px;
 }
 
-.container4 .center .navbar3 .button1 {
+.container4 .center .navbar3 .button1 { 
 	float: right;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -509,3 +508,188 @@ table {
 	opacity: 1;
 }
 
+
+
+@media (max-width:1200px) {
+
+	.center {		
+		width: 90%;
+	}
+
+	.container1 .center header .heder_navbar {
+		margin-left: 20%;
+	}
+
+	.container1 .center header .heder_navbar,
+	.container1 .center header .heder_navbar ul, 
+	.container1 .center header .heder_navbar ul li {
+		top:0;
+		display: grid;
+    	grid-gap: 5px;
+    	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    	grid-template-rows: repeat(4, 20px);
+	}
+
+	.container1 .center header .heder_navbar ul li:nth-child(9) {
+		margin-left: 0;
+	}
+
+	.container1 .center .center_text {
+		margin-top: 5%;
+	}
+
+	.container2 .center .flex_container {
+		display: grid;
+    	grid-gap: 5px;
+    	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    	grid-template-rows: repeat(3, 200px);
+	}
+
+	.container5 .center .grid-container {
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 370px);
+		grid-template-rows: repeat(3, 337px);
+		justify-content: center;
+	}
+
+}
+
+@media (max-width:850px) {
+
+	.center {
+		width: 90%;
+	}
+
+	.container2 {
+		height: 100%
+	}
+
+	.container2 .center .flex_container {
+		display: grid;
+    	grid-gap: 5px;
+    	grid-template-columns: repeat(2, 1fr);
+    	grid-template-rows: repeat(2, 1fr);
+	}
+
+	.container4 .center .navbar1 {
+		margin: 15px 0;
+	}
+
+	.container4 .center .navbar1 ul {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 30px);
+	}
+
+	.container4 .center .navbar1 ul li {
+		text-align: center;
+	}
+	
+	.container4 .center .navbar2 {
+		text-align: center;
+	}
+
+	.container5 {
+		height: 100%;
+	}
+
+	.container5 .center .categories ul {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    	grid-template-rows: repeat(3, 50px);
+		justify-content: center;
+	}
+
+	.container5 .center .grid-container {
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 370px);
+		grid-template-rows: repeat(6, 337px);
+		justify-content: center;
+	}
+
+	
+	
+}
+
+
+@media (max-width:520px) {
+
+	.container1 {
+		height: 136vh;
+	}
+
+	.container1 .center .center_text {
+		margin-top: 25%;
+	}
+
+	.container2 .center .flex_container {
+		display: block;
+	}
+
+	.container4 .center .navbar1 ul li a {
+		font-size: 20px;
+	}
+	.container4 .center .navbar3 .button1 {
+		font-size: 12px;
+		padding: 10px 20px 10px;
+	}
+
+	.container5 .center .grid-container {
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 337px);
+		grid-template-rows: repeat(6, 370px);
+		justify-content: center;
+	}
+
+}
+
+@media (max-width:382px) {
+
+	.container1 {
+		height: 150vh;
+	}
+
+	.container1 .center .center_text {
+		margin-top: 36%;
+	}
+
+	.container4 {
+		height: 100%;
+		padding-bottom: 20px;
+	}
+
+	.container4 .center {
+		display: grid;
+		grid-template-areas:
+			'n1 n1 n1'
+			'n2 n2 n2'
+			'. n3 .';
+	}
+
+	.container4 .center .navbar3 {
+		margin-top: 20px;
+		align-self: center;
+	}
+	
+	
+}
+
+@media (max-width:330px) {
+
+	.container1 {
+		height: 190vh;
+	}
+
+	.container1 .center header .heder_navbar,
+	.container1 .center header .heder_navbar ul, 
+	.container1 .center header .heder_navbar ul li {
+		text-align: center;
+		display: block;
+		margin-top: 5%;
+	}
+}
