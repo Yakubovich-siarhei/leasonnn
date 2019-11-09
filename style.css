@@ -741,6 +741,7 @@ table {
 	padding: 0;
 	border: none;
 	margin-left: 2%;
+	position: relative;
 }
 
 .card-img-top {
@@ -757,6 +758,36 @@ table {
 
 .container9 .center .content .card:hover p {
 	color: #ffffff;
+}
+
+.container9 .center .content .card .num {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	color: #ffffff;
+	font-size: 24px;
+	background: #363636;
+	padding: 8px 8px;
+	border-radius: 3px 3px 0px 0px ;
+}
+
+.container9 .center .content .card .mon {
+	position: absolute;
+	left: 20px;
+	top: 56px;
+	color: #ffffff;
+	font-size: 12px;
+	background: #252525;
+	padding: 1px 10px 1px 11px;
+	border-radius: 0px 0px 3px 3px;
+}
+
+.container9 .center .content .card:hover .mon {
+	background: #998675;
+}
+
+.container9 .center .content .card:hover .num {
+	background: #c7b299;
 }
 
 .container10 {
