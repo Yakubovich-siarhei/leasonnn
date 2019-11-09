@@ -692,6 +692,23 @@ table {
 	height: 754px;
 }
 
+.container9 .center .content h2 {
+	padding-top: 82px;
+	color: #555555;
+	font-size: 30px;
+	font-family:  'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+.container9 .center .content p {
+	padding-top: 30px;
+	color: #615855;
+	line-height: 30px;
+	font-size: 16px;
+	font-family:  'Montserrat', sans-serif;
+	font-weight: 300;
+}
+
 .content_text {
 	text-align: center;
 }
@@ -710,7 +727,7 @@ table {
 	font-size: 20px;
 	font-family:  'Raleway', sans-serif;
 	font-weight: 500;
-	color: #747474;
+	color: #555555;
 }
 
 .card-text {
@@ -734,9 +751,61 @@ table {
 	opacity: 0.5;
 }
 
+.container9 .center .content .card:hover h5 {
+	color: #c7b299;
+}
+
+.container9 .center .content .card:hover p {
+	color: #ffffff;
+}
+
 .container10 {
 	height: 490px;
 	background-image: url(./img/background-cont_10.png);
+	background-repeat: no-repeat;
+}
+	
+.container10 .logos-block div {
+	padding-top: 180px;
+}
+
+.container10 .logos-block div:nth-child(2) {
+	padding-top: 140px;
+}
+
+.container11 {
+	height: 508px;
+	background-color: #191919;
+	padding-top: 80px;
+}
+
+.container11 .center .content11 .abount img {
+	display: inline;
+}
+
+.container11 .center .content11 .abount h2 {
+	position: relative;
+	top: 8px;
+	display: inline;
+	color: #fbfaf8;
+	font-size: 34px;
+	font-family:  'Raleway', sans-serif;
+	font-weight: 400;
+}
+
+.container11 .center .content11 .abount p {
+	padding-top: 30px;
+	color: #747474;
+	font-size: 14px;
+	font-family:  'Montserrat', sans-serif;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.container11 .center .content11 .abount a {
+	text-decoration: none;
+	color: #fbfaf8;
+	padding: 0;
 }
 
 
